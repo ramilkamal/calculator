@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator - html,css</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <form name="form">
+                <div class="display">
+                    <input type="text" placeholder="0" name="displayResult" />
+                </div>
+                <div class="buttons">
+                    <div class="row">
+                        <input
+                            type="button"
+                            name="b7"
+                            value="7"
+                            onClick="calcNums(b7.value)"
+                        />
+                        <input
+                            type="button"
+                            name="b8"
+                            value="8"
+                            onClick="calcNums(b8.value)"
+                        />
+                        <input
+                            type="button"
+                            name="b9"
+                            value="9"
+                            onClick="calcNums(b9.value)"
+                        />
+                        <input
+                            type="button"
+                            name="addb"
+                            value="+"
+                            onClick="calcNums(addb.value)"
+                        />
+                    </div>
+                    <div class="row">
+                        <input
+                            type="button"
+                            name="b4"
+                            value="4"
+                            onClick="calcNums(b4.value)"
+                        />
+                        <input
+                            type="button"
+                            name="b5"
+                            value="5"
+                            onClick="calcNums(b5.value)"
+                        />
+                        <input
+                            type="button"
+                            name="b6"
+                            value="6"
+                            onClick="calcNums(b6.value)"
+                        />
+                        <input
+                            type="button"
+                            name="subb"
+                            value="-"
+                            onClick="calcNums(subb.value)"
+                        />
+                    </div>
+                    <div class="row">
+                        <input
+                            type="button"
+                            name="b1"
+                            value="1"
+                            onClick="calcNums(b1.value)"
+                        />
+                        <input
+                            type="button"
+                            name="b2"
+                            value="2"
+                            onClick="calcNums(b2.value)"
+                        />
+                        <input
+                            type="button"
+                            name="b3"
+                            value="3"
+                            onClick="calcNums(b3.value)"
+                        />
+                        <input
+                            type="button"
+                            name="mulb"
+                            value="*"
+                            onClick="calcNums(mulb.value)"
+                        />
+                    </div>
+                    <div class="row">
+                        <input
+                            type="button"
+                            name="b0"
+                            value="0"
+                            onClick="calcNums(b0.value)"
+                        />
+                        <input
+                            type="button"
+                            name="potb"
+                            value="."
+                            onClick="calcNums(potb.value)"
+                        />
+                        <input
+                            type="button"
+                            name="divb"
+                            value="/"
+                            onClick="calcNums(divb.value)"
+                        />
+                        <input
+                            type="button"
+                            class="result"
+                            value="="
+                            onClick="displayResult.value=eval(displayResult.value)"
+                        />
+                    </div>
+                    <input
+                        type="button"
+                        name="C"
+                        value="C"
+                        onClick="clean(clear)"
+                    />
+                </div>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
